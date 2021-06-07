@@ -1,0 +1,23 @@
+Inicio pseudocodigoEjercicio10
+
+	Variable sumaTotal
+	Variable numero
+	Variable multiplosDeSeis = 0
+	Variable sumaNumeroUnoDiez
+	hacer
+		Escribir "Ingrese numero entre 0-1000: "
+		Leer numero
+		sumaTotal = sumaTotal + numero
+		
+		Si (numero%6 ==0) hacer
+			multiplosDeSeis = multiplosDeSeis + 1
+		FinSi
+		Si(numero>=1 && numero<=10) hacer
+			sumaNumeroUnoDiez = sumaNumeroUnoDiez + numero
+		FinSi
+	Repetir mintras(sumaTotal < 1000)
+	
+	Escribir "La cantidad de numeros multiplos de 6 son: " multiplosDeSeis
+	Escribir "La suma de numeros entre 1 - 10 es: " sumaNumeroUnoDiez
+	
+Fin
